@@ -23,7 +23,7 @@ const handleApiCall = (req, res) => {
             },
             body:raw,
     })
-    .then(res => res.text())
+    .then(response => response.text())
     .then(data => {
         res.json(data);
     })
