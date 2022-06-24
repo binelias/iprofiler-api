@@ -13,10 +13,8 @@ const db = knex({
     client: 'pg',
     version: '7.2',
     connection: {
-        host : 'postgresql-pointy-47076',
-        user : '',
-        password : '',
-        database : ''
+        host : process.env.DATABASE_URL,
+        ssl: true
     }
 });
 
