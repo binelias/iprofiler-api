@@ -15,7 +15,7 @@ const handleApiCall = (req, res) => {
         ]
     });
 
-    fetch("https://api.clarifai.com/v2/models/face-detection/versions/45fb9a671625463fa646c3523a3087d5/outputs", {
+    await fetch("https://api.clarifai.com/v2/models/face-detection/versions/45fb9a671625463fa646c3523a3087d5/outputs", {
         method: "POST",
         headers: {
                 Accept: "application/json",
